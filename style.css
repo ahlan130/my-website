@@ -1,0 +1,118 @@
+:root {
+  --orange: #ff7a00;
+  --black: #111111;
+  --gray: #f7f7f7;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--black);
+}
+.navbar-brand {
+  color: var(--orange) !important;
+  font-weight: 600;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--orange) !important;
+}
+
+/* Header (Home) */
+header {
+  background-color: var(--orange);
+  color: var(--black);
+  text-align: center;
+  padding: 60px 0;
+}
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--black);
+  object-fit: cover;
+}
+
+/* Project cards */
+.card {
+  border: none;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact form */
+form {
+  background: var(--gray);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+button {
+  background-color: var(--black);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+footer a {
+  color: var(--orange);
+  margin: 0 8px;
+  font-size: 20px;
+}
+footer a:hover {
+  color: white;
+}
+
+/* About section */
+.about-header {
+  background: url('../img/profile.jpeg') center/cover no-repeat;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+.about-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.about-header h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Progress bars */
+.progress {
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+}
+.progress-bar {
+  background: var(--orange);
+}
